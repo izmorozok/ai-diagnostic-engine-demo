@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Quiz Schema",
+  "type": "object",
+  "required": ["quiz_id", "title", "language", "questions"],
+  "properties": {
+    "quiz_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "text", "options"],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array"
+          }
+        }
+      }
+    }
+  }
+}
