@@ -1,0 +1,26 @@
+{
+  "quiz_id": "action_barrier_demo",
+  "title": "Action Barrier Diagnostic Demo",
+  "language": "ru",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single_choice",
+      "text": "Что чаще всего происходит перед тем, как задача застревает?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Я начинаю уточнять детали и откладываю запуск",
+          "mechanism": "endless_preparation",
+          "weight": 2
+        },
+        {
+          "id": "b",
+          "text": "Я теряю ощущение, зачем это вообще нужно",
+          "mechanism": "lost_direction",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}
